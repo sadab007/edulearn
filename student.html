@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - EduLearn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/student.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Edu<span>Learn</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="student.html" class="active">Student</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="btn-nav">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Student Dashboard</h1>
+        <p>Welcome back! Track your learning progress here.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="dashboard-grid">
+            <div class="dash-card">
+                <div class="icon-wrap"><i class="fa-solid fa-book"></i></div>
+                <div class="dash-number">3</div>
+                <div class="dash-label">Enrolled Courses</div>
+            </div>
+            <div class="dash-card">
+                <div class="icon-wrap"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="dash-number">1</div>
+                <div class="dash-label">Completed</div>
+            </div>
+            <div class="dash-card">
+                <div class="icon-wrap"><i class="fa-solid fa-spinner"></i></div>
+                <div class="dash-number">2</div>
+                <div class="dash-label">In Progress</div>
+            </div>
+            <div class="dash-card">
+                <div class="icon-wrap"><i class="fa-solid fa-clock"></i></div>
+                <div class="dash-number">12</div>
+                <div class="dash-label">Hours Learned</div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="text-align:left; margin-bottom:16px; font-size:1.3rem;">My Enrolled Courses</h2>
+        <div class="enrolled-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Progress</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-code" style="color:#2563eb;margin-right:6px;"></i> Web Development Fundamentals</td>
+                        <td>4 Weeks</td>
+                        <td>
+                            <div class="progress-bar"><div class="progress-fill" style="width:100%;"></div></div>
+                            100%
+                        </td>
+                        <td><span class="status-badge status-completed">Completed</span></td>
+                        <td><a href="course-detail.html" class="btn btn-sm btn-secondary">View</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-brands fa-js" style="color:#eab308;margin-right:6px;"></i> JavaScript Essentials</td>
+                        <td>5 Weeks</td>
+                        <td>
+                            <div class="progress-bar"><div class="progress-fill" style="width:60%;"></div></div>
+                            60%
+                        </td>
+                        <td><span class="status-badge status-active">In Progress</span></td>
+                        <td><a href="course-detail.html" class="btn btn-sm btn-primary">Continue</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-brands fa-react" style="color:#22d3ee;margin-right:6px;"></i> React.js Basics</td>
+                        <td>4 Weeks</td>
+                        <td>
+                            <div class="progress-bar"><div class="progress-fill" style="width:20%;"></div></div>
+                            20%
+                        </td>
+                        <td><span class="status-badge status-active">In Progress</span></td>
+                        <td><a href="course-detail.html" class="btn btn-sm btn-primary">Continue</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center mt-24">
+            <a href="courses.html" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Browse More Courses</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div><h4>EduLearn</h4><p>Practical web development training for students.</p></div>
+            <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a></div>
+            <div><h4>Support</h4><a href="student.html">Student</a><a href="login.html">Login</a><a href="register.html">Register</a></div>
+            <div><h4>Legal</h4><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refund.html">Refund</a></div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 EduLearn. All rights reserved.</div>
+    </div>
+</footer>
+</body>
+</html>
